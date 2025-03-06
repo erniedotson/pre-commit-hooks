@@ -1,0 +1,14 @@
+- id: check-fixme
+  name: Check FIXME comments
+  description: Check for FIXME comments
+  entry: '[Ff][Ii][Xx][Mm][Ee]:'
+  language: pygrep
+  types: [text]
+  stages: [pre-commit, pre-merge-commit, pre-push, manual]
+- id: check-todo
+  name: Check TODO comments
+  description: Check for TODO comments
+  entry: '[Tt][Oo][Dd][Oo]:'
+  language: pygrep
+  types: [text]
+  stages: [pre-commit, pre-merge-commit, pre-push, manual]
